@@ -1,0 +1,161 @@
+.services-section {
+    background-color: #01111f;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .service1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  
+  .service2 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .highlight1 {
+    color:  #0E62A6;
+  }
+  
+ 
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding:10px;
+  }
+  
+  @media (min-width: 768px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .service-card {
+    /* background-color:#222121; */
+    background-color: #01111f;
+    padding: 1.8rem;
+    border: 1px solid #404041;
+    border-radius: 0.5rem;
+  }
+  
+  .service-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .service-description {
+    color: #a1a1aa;
+    font-size: 0.90rem;
+  }
+  .content-box{
+    padding: 20px 10px;
+  }
+  .content-box{
+    border: 1px solid rgb(80, 79, 79);
+    border-radius: 0.5rem;
+  }
+  
+  .content-box .content-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid rgb(80, 79, 79);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .content-title {
+    color: white;
+  }
+  
+  .content-subtitle {
+    color: #a1a1aa;
+  }
+  
+  .content-icon {
+    color:  #0E62A6;
+  }
+  
+  .chatbox {
+    background-color: transparent;
+    border: 1px solid rgb(85, 85, 85);
+    padding: 4.9rem;
+    border-radius: 0.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .chatbox-item {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+  }
+  
+  .chatbox-header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .chatbox-message {
+    color: #a1a1aa;
+  }
+  
+  .chart-container {
+    position: relative;
+    height: 15.7rem;
+    background-color: #01111f;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(100, 97, 97);
+   
+  }
+  
+  .chart-percentage {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color:  #0E62A6;
+    color:  #0E62A6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  @media (max-width: 480px) {
+   .services-grid .service-description{
+    font-size: 1.70rem;
+   }
+   .service-title{
+    font-size: 2rem;
+   }
+   .content-title{
+    font-size: 1.45rem;
+   }
+   .content-subtitle{
+    font-size: 1.35rem;
+   }
+   .chatbox-header{
+    font-size: 1.7rem;
+   }
+   .chatbox-message{
+    font-size: 1.78rem;
+   }
+   .services-grid{
+    position: relative;
+    left: 5%;
+   }
+  }

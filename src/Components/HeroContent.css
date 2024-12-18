@@ -1,0 +1,132 @@
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10;
+  font-family: 'Roboto', sans-serif;
+  width: 90%;
+  padding: 20px;
+}
+
+/* Heading Styling */
+.hero-content h1 {
+  font-size: 6rem; /* Default for larger screens */
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  word-wrap: break-word;
+  padding: 0 10px;
+}
+
+/* Paragraph Styling */
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Button Container */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Buttons Styling */
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover Effects */
+.hero-buttons .btn-primary:hover,
+.hero-buttons .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-3px); /* Lift effect */
+}
+
+/* Responsive Media Queries */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+
+  .hero-content h1 {
+    font-size: 5.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Small Devices (Mobiles) */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+    width: 80%; /* Buttons take up most of the width */
+  }
+}
+
+/* Extra Small Devices (Small Mobiles) */
+@media (max-width: 480px) {
+  .hero-content{
+    width: 150vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 80%;
+    left: 55%;
+  }
+  .hero-content h1 {
+    font-size: 5.78rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    display: none;
+    font-size: 1.30rem;
+    margin-bottom: 15px;
+  }
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    font-size: 1.23rem;
+    padding: 8px 16px;
+    width: 100%; /* Full width buttons */
+  }
+}

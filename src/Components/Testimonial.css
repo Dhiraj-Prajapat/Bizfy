@@ -1,0 +1,152 @@
+.testimonial-section {
+    width: 100vw;
+    min-height: 80vh;
+    /* background-color: rgb(36, 35, 35); */
+    background-color: #01111f;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Section Title */
+  .testimonial-title {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .testimonial-title .highlight {
+    color:  #0E62A6; 
+  }
+  
+  /* Swiper Container */
+  .testimonial-swiper {
+    max-width: 90%; 
+    width: 100%; 
+    padding: 40px 0;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Swiper Wrapper and Slides */
+  .swiper-wrapper {
+    display: flex;
+    gap: -10px; /* Space between slides */
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Individual Testimonial Card */
+  .testimonial-card {
+    background: rgba(19, 19, 19, 0.1);
+    border-radius: 10px;
+    padding: 40px 20px;
+    width: 100%; /* Responsive width */
+    max-width: 400px; /* Limit card width */
+    height: auto; /* Allow flexible height */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    border: 1px solid rgb(124, 122, 122);
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Quote Styling */
+  .testimonial-quote {
+    font-size: 1.55rem;
+    font-style: italic;
+    color: #fff;
+  }
+  
+  .testimonial-para {
+    font-size: 0.85rem;
+    padding-top: 10px;
+    color: rgb(129, 129, 129);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Details Section */
+  .testimonial-details {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Avatar Styling */
+  .testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid  #0E62A6;
+  }
+  
+  /* Name and Title Styling */
+  .testimonial-name span {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .testimonial-name small {
+    font-size: 0.8rem;
+    color: #a6a6a6;
+  }
+  
+  /* Swiper Pagination */
+  .swiper-pagination-bullet {
+    background-color:  #0E62A6 !important;
+    opacity: 1 !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #fff !important;
+  }
+  
+  /* Swiper Navigation */
+  .swiper-button-prev,
+  .swiper-button-next {
+    color:  #0E62A6;
+    transition: color 0.3s;
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    color: #fff;
+  }
+  
+@media (max-width: 480px) {
+.testimonial-section{
+ 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 145vw
+}
+.testimonial-para{
+  font-size: 1.45rem;
+}
+.testimonial-quote{
+  font-size: 2rem;
+}
+.testimonial-name span{
+  font-size: 1.70rem;
+}
+.testimonial-name small{
+  font-size: 1.70rem;
+}
+.testimonial-card{
+  position: relative;
+  left: 0%;
+}
+}

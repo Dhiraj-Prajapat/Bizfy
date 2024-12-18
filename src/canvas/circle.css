@@ -1,0 +1,17 @@
+.animated-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 480px){
+  .animated-circle{
+    position: absolute;
+  top: 70%;
+  left: 55%;
+  }
+}

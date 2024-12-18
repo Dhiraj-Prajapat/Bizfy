@@ -1,0 +1,145 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  font-family: 'Arial', sans-serif;
+  z-index: 1000;
+  background-color: rgba(23, 21, 24, 0.377); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+
+.navbar-logo .logo-dot img {
+  width: 200px;
+  height: 40px;
+  object-fit: contain;
+  transition: all 0.3s;
+}
+
+.logo-dot.large-logo img {
+  width: 250px; /* Large size on toggle */
+  height: 50px;
+}
+
+/* Nav Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #0E62A6;
+}
+
+/* Menu Button */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Active Menu Bars */
+.bar-active:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.bar-active:nth-child(2) {
+  opacity: 0;
+}
+.bar-active:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Navbar Button */
+.navbar-button button {
+  padding: 8px 15px;
+  font-size: 12px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar-button button:hover {
+  background: #4e504f;
+  color: white;
+}
+
+/* Responsive Navbar */
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;
+    position: relative;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(23, 21, 24, 0.747); 
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    transition: all 0.3s;
+  }
+
+  .navbar-links.show-links {
+    display: flex;
+ 
+  }
+
+  .navbar-links a {
+    font-size: 28px;
+    padding: 10px;
+    width: 100%;
+
+  }
+
+  .navbar-logo .logo-dot img {
+    width: 150px; 
+    height: 83px;
+  }
+
+  .navbar-button button{
+    font-size: 25px;
+    display: none;
+  }
+
+}
+@media (max-width: 480px){
+  .menu-icon {
+    display: block;
+    position: relative;
+    left: 45vw;
+  }
+}

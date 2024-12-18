@@ -1,0 +1,62 @@
+ .agency-hero {
+    /* background-color: #242424;  */
+    background-color: #01111f;
+    height: 80vh; 
+    display: flex;
+    align-items:center;
+    justify-content:flex-start ;
+    padding-left: 24px;
+    overflow: hidden; 
+}
+
+.agency-hero-container {
+   width: 100%;
+    text-align: start;    
+}
+
+.agency-hero-content {
+    margin-top: 15px;
+
+}
+.service{
+    color: #0E62A6;
+}
+
+.agency-hero-heading {
+    font-size: 4.3rem; 
+    font-weight: 400;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 16px;  
+}
+.emoji{
+    font-size: 3rem;
+    width: 80px;
+    border-radius: 20px;
+    height: 50px;
+   
+}
+
+.highlight1{
+    color:  #0E62A6;
+}
+
+
+  /* Tablet screens */
+  @media (max-width: 1024px) {
+    .agency-hero{
+        height: 100vh;
+       
+    }
+  }
+
+  @media (max-width: 480px){
+    .agency-hero{
+        height: 80vh;
+    }
+   
+    .agency-hero-heading{
+        font-size: 3rem;
+    }
+    
+  }

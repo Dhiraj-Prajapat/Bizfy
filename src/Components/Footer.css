@@ -1,0 +1,147 @@
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    /* background-color: #242424; */
+    background-color: #01111f;
+        color: white;
+    padding: 32px 0px 1px 0px;
+  }
+  
+  .footer-header {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-heading {
+    font-size: 3.67rem;
+    font-weight: 500;
+  }
+
+
+  .footer-email {
+    font-size: 3.67rem;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    position: relative; 
+  }
+  
+  .footer-email::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 3px; 
+    width: 0;
+    height: 2px; 
+    background-color:  #0E62A6; 
+    transition: width 0.5s ease; 
+  }
+  
+  .footer-email:hover::after {
+    width: 100%; 
+  }
+  
+  .footer-email .email-highlight {
+    color: inherit; 
+  }
+  
+  .footer-email:hover .email-highlight {
+    color:  #0E62A6; 
+  }
+  
+  
+  .email-highlight {
+    color: #0E62A6;
+  }
+  
+  .footer-content {
+    margin-top: auto;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding: 32px;
+    border-top: 1px solid #27272a;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-year {
+    color: #0E62A6;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-link:hover {
+    color:  #0E62A6;
+  }
+  
+  .footer-local-time {
+    color: #9ca3af;
+  }
+  
+
+  
+  .link-arrow {
+    transform: rotate(45deg);
+  }
+  
+.footer_img_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.footer_img{
+  opacity: 50%;
+  width: 30%;
+  height: 5%;
+}
+
+@media (max-width: 480px) {
+  .footer-heading {
+    display: none;
+  }
+
+  .footer-email {
+    font-size: 4rem;
+    margin-top: 1px;
+  }
+ 
+  .footer-grid{
+    padding-left: 3rem;
+    font-size: 1.70rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-year{
+    font-size: 2rem;
+  }
+  .footer-column{
+    border-top: 1px solid rgb(99, 97, 97);
+  }
+  .socialLink{
+    display: none;
+  }
+ .footer-credit p{
+    font-size: 1.70rem;
+  }
+.footer_img{
+  width: 400px;
+  height: 100px;
+}
+}
