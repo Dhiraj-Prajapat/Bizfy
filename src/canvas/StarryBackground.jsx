@@ -10,7 +10,7 @@ const StarryBackground = () => {
         left: 0,
         width: "100%",
         height: "130%",
-        zIndex: -2,
+        zIndex: -23,
       }}
       camera={{ position: [0, 0, 5] }}
     >

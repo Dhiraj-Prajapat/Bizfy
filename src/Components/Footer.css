@@ -5,8 +5,10 @@
     min-height: 80vh;
     /* background-color: #242424; */
     background-color: #01111f;
-        color: white;
+     color: white;
     padding: 32px 0px 1px 0px;
+    position: sticky;
+    z-index: 120;
   }
   
   .footer-header {
