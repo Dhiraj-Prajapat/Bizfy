@@ -1,12 +1,11 @@
-import React from 'react';
-import './Footer.css'; // Link to normal CSS file
+import './Footer.css';
 
 const Footer = () => {
     return (
         <div className="footer-container">
             {/* Header Section */}
             <header className="footer-header">
-                <h1 className="footer-heading" data-aos="fade-right">Let's talk.</h1>
+                <h1 className="footer-heading" data-aos="fade-right">Let&apos;s talk.</h1>
                 <a href="mailto:mail@nebula.com" className="footer-email" data-aos="fade-left">
                     mail<span className="email-highlight">@</span>bizfy.com
                 </a>
@@ -57,7 +56,7 @@ const Footer = () => {
                 </div>
                 <div className="footer_img_container">
                     <div className="footer_img">
-                        <img src='/public/white logo-02.png' alt="" />
+                        <img src='/white logo-02.png' alt="Brand-logo" />
                     </div>
                 </div>
             </footer>

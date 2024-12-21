@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll"; // Import Link from react-scroll
 import "./Navbar.css";
 
@@ -15,7 +15,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="navbar-logo">
         <span className={`logo-dot ${isMenuOpen ? "large-logo" : ""}`}>
-          <img src="/public/white logo-02.png" className="logo_image" alt="Logo" />
+          <img src="/white logo-02.png" className="logo_image" alt="Logo" />
         </span>
       </div>
 
