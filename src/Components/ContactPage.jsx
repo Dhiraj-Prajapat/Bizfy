@@ -46,22 +46,22 @@ const ContactPage = () => {
    const proxyUrl = "https://thingproxy.freeboard.io/fetch/";
   const googleScriptUrl = "https://script.google.com/macros/s/AKfycbwMf4mAI89GofLo6-c-Ad2wT9GAA1MznVjAMGYxwsXR3B3OvZ9QEuj14tmglM5hj33uaw/exec";
 
-  const checkDuplicateData = async () => {
-    try {
-      // Send GET request to check if email or phone number already exists
-      const response = await axios.get(`${googleScriptUrl}?email=${formData.email}&contact=${formData.contact}`);
+  // const checkDuplicateData = async () => {
+  //   try {
+  //     // Send GET request to check if email or phone number already exists
+  //     const response = await axios.get(`${googleScriptUrl}?email=${formData.email}&contact=${formData.contact}`);
       
-      // Check if email or contact exists in the response
-      if (response.data.duplicate) {
-        return response.data.message; // This message could be something like "Email or phone number already exists"
-      }
+  //     // Check if email or contact exists in the response
+  //     if (response.data.duplicate) {
+  //       return response.data.message; // This message could be something like "Email or phone number already exists"
+  //     }
       
-      return null; // No duplicates found
-    } catch (error) {
-      console.error("Error checking duplicates:", error);
-      return "Error checking for duplicates.";
-    }
-  };
+  //     return null; // No duplicates found
+  //   } catch (error) {
+  //     console.error("Error checking duplicates:", error);
+  //     return "Error checking for duplicates.";
+  //   }
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -76,11 +76,11 @@ const ContactPage = () => {
     }
 
     // Check for duplicate email or contact
-    const duplicateError = await checkDuplicateData();
-    if (duplicateError) {
-      setErrors({ ...errors, duplicate: duplicateError });
-      return;
-    }
+    // const duplicateError = await checkDuplicateData();
+    // if (duplicateError) {
+    //   setErrors({ ...errors, duplicate: duplicateError });
+    //   return;
+    // }
 
     // Generate a unique ID using uuid to prevent duplicate data
     const uniqueID = uuidv4();
