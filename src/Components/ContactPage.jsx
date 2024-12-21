@@ -43,7 +43,7 @@ const ContactPage = () => {
     return "";
   };
 
-   const proxyUrl = "https://thingproxy.freeboard.io/fetch/";
+   // const proxyUrl = "https://thingproxy.freeboard.io/fetch/";
   const googleScriptUrl = "https://script.google.com/macros/s/AKfycbwMf4mAI89GofLo6-c-Ad2wT9GAA1MznVjAMGYxwsXR3B3OvZ9QEuj14tmglM5hj33uaw/exec";
 
   // const checkDuplicateData = async () => {
@@ -90,7 +90,7 @@ const ContactPage = () => {
 
     try {
       const response = await axios.post(
-        `${proxyUrl}${googleScriptUrl}`,
+        `${googleScriptUrl}`,
         formDataWithID,
         {
           headers: {
