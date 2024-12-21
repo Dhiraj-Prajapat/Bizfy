@@ -90,7 +90,7 @@ const ContactPage = () => {
 
     try {
       const response = await axios.post(
-        `${googleScriptUrl}`,
+        `https://cors-anywhere.herokuapp.com/${googleScriptUrl}`,
         formDataWithID,
         {
           headers: {
